@@ -7,7 +7,6 @@ import Book from './Book';
 const MainColumn = styled.div`
   max-width: 1150px;
   margin: 0 auto;
-  padding: 20px;
 `;
 
 const defaultHistory = createBrowserHistory();
