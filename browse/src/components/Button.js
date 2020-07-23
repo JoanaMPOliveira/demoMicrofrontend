@@ -1,11 +1,15 @@
 import styled from 'styled-components';
 
 const Button = styled.button.attrs({ type: 'button' })`
-  height: 30px;
-  width: 100px;
-  font-size: 20px;
-  background-color: #e79652;
-  color: #2b2318;
+  position: absolute;
+  right: 0;
+  transform:translate(-60%, 0);
+  height: 42px;
+  width: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: transparent;
+  color: grey;
   border-radius: 2px;
   border: none;
   &:hover {

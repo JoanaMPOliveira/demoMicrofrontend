@@ -7,6 +7,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   height: calc(100vh - 80px);
+  padding-top: 50px;
 `;
 
 const ItemWrapper = styled.div`

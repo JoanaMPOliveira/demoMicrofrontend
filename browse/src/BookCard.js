@@ -6,37 +6,46 @@ import PropTypes from 'prop-types';
 const StyledLink = styled(Link)`
   color: inherit;
   text-decoration: none;
-`;
+  `;
 
 const Card = styled.div`
   display: inline-block;
-  width: 100%;
+  width: 95%;
   max-width: 350px;
-  margin: 0 5px;
+  margin: 0 5px 20px;
 `;
 
 const CardTitleRow = styled.div`
+  background-color: white;
+  color: grey;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  padding: 10px;
+  min-height: 125px;
 `;
-
+const TitlesWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 const CardTitle = styled.h2`
   margin: 0;
 `;
 
-const PriceRange = styled.span`
-  font-size: 20px;
+const CardSubTitle = styled.p`
+  color: grey;
+  font-style: italic;
+
+`;
+
+const Price = styled.span`
+  font-size: 16px;
+  color: grey;
+  font-weight: bold;
 `;
 
 const Img = styled.img`
   width: 100%;
-`;
-
-const Description = styled.p`
-  margin-top: 0;
-  font-size: 20px;
 `;
 
 const BookCard = ({ book }) => (
@@ -44,10 +53,13 @@ const BookCard = ({ book }) => (
     <StyledLink to={`/book/${book.id}`}>
       <Img src={book.imageSrc} alt='book image' />
       <CardTitleRow>
-        <CardTitle>{book.name}</CardTitle>
-        <p>{book.price}</p>
+        <TitlesWrapper>
+          <CardTitle>{book.name}</CardTitle>
+          <CardSubTitle>{book.author}</CardSubTitle>
+
+        </TitlesWrapper>
+        <Price>{book.price} €</Price>
       </CardTitleRow>
-      <p>{book.author}</p>
     </StyledLink>
   </Card>
 );

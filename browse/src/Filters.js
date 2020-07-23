@@ -6,9 +6,11 @@ import Button from './components/Button';
 const mediumScreen = `@media (max-width: 830px)`;
 
 const FilterRow = styled.div`
+  position:fixed;
   padding: 30px;
   font-size: 24px;
   display: flex;
+  top: -10px;
 
   ${mediumScreen} {
     flex-direction: column;
@@ -21,8 +23,8 @@ const Filters = ({
   resetAll,
 }) => (
   <FilterRow>
-    <TextInput label="Search:" value={name} onChange={setNameFilter} />
-    <Button onClick={resetAll}>Clear</Button>
+    <TextInput label="search" value={name} onChange={setNameFilter} />
+    <Button onClick={resetAll}>&times;</Button>
   </FilterRow>
 );
 

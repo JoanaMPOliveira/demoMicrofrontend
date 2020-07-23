@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import BookCard from './BookCard';
 
 const CardContainer = styled.div`
+  margin-top: 130px;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;

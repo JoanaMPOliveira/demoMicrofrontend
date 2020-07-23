@@ -9,13 +9,13 @@ const AppHeader = () => (
       <nav>
         <ol>
           <li>
-            <NavLink to="/">Browse books</NavLink>
+            <NavLink to="/">BOOKS</NavLink>
           </li>
           <li>
-            <NavLink to="/random">For me</NavLink>
+            <NavLink to="/random">FOR ME</NavLink>
           </li>
           <li>
-            <NavLink to="/about">About</NavLink>
+            <NavLink to="/about">ABOUT</NavLink>
           </li>
         </ol>
       </nav>
