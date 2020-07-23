@@ -7,8 +7,13 @@ import Filters from './Filters';
 import BookList from './BookList';
 
 const MainColumn = styled.div`
-  max-width: 1150px;
+  max-width: 80%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 `;
 
 const defaultFilters = {
